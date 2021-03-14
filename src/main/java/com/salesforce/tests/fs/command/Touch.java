@@ -23,7 +23,7 @@ public class Touch extends CommandImpl {
                 String filename = args.get(1);
                 if (filename != null && filename.matches("[a-zA-Z0-9.]+")) {
                     if (fs != null) {
-                        if (fs.nameExists(filename)) {
+                        if (!fs.nameExists(filename)) {
                             fs.createFile(filename);
                             return "";
                         } else {

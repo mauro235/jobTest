@@ -11,7 +11,7 @@ public class TouchTest extends BaseTest {
 
     @Test
     public void testTouchSuccessCmd() throws IOException {
-        String fileName = "tstF";
+        String fileName = "tstFss345dd";
 
         String[] expectedResults = {
                 ".\n..\n" + fileName
@@ -33,10 +33,10 @@ public class TouchTest extends BaseTest {
 
     @Test
     public void testTouchProtectedCmd() throws IOException {
-        String fileName = "/";
+        String fileName = "root";
 
         String[] expectedResults = {
-                "Invalid fileName"
+                "File/Directory "+fileName+" already exists"
         };
 
         runTest(expectedResults, "touch " + fileName, "quit");
@@ -44,7 +44,7 @@ public class TouchTest extends BaseTest {
 
     @Test
     public void testTouchExistsCmd() throws IOException {
-        String fileName = "tstFs";
+        String fileName = "tstFsss";
 
         String[] expectedResults = {
                 "File/Directory " + fileName + " already exists"

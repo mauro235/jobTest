@@ -22,14 +22,10 @@
             <scope>test</scope>
         </dependency>
 
-        <!--        <dependency>
-                    <groupId>com.github.stefanbirkner</groupId>
-                    <artifactId>system-rules</artifactId>
-                    <version>1.16.1</version>
-                </dependency>-->
         <dependency>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-compiler-plugin</artifactId>
+            <groupId>com.github.stefanbirkner</groupId>
+            <artifactId>system-rules</artifactId>
+            <version>1.16.1</version>
         </dependency>
     </dependencies>
 </project>

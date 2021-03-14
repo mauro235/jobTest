@@ -169,7 +169,7 @@ public class Filesystem {
             }
         }
 
-        return !result;
+        return result;
     }
 
 }
